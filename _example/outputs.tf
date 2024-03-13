@@ -4,6 +4,6 @@ output "domain_identity_arn" {
 }
 
 output "id" {
-  value       = module.ses.*.id
+  value       = module.ses[*].id
   description = "The domain name of the domain identity."
 }

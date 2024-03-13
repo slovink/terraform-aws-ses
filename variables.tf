@@ -26,10 +26,9 @@ variable "label_order" {
 
 variable "managedby" {
   type        = string
-  default     = "hello@clouddrove.com"
-  description = "ManagedBy, eg 'CloudDrove'"
+  default     = "hello@slovink.com"
+  description = "ManagedBy, eg 'slovink'"
 }
-
 #Module      : DOMAIN IDENTITY
 #Description : Terraform domain identity module variables.
 variable "domain" {
@@ -111,11 +110,11 @@ variable "zone_id" {
   description = "Route53 host zone ID to enable SES."
 }
 
-variable "filter_name" {
-  type        = string
-  default     = ""
-  description = "The name of the filter."
-}
+#variable "filter_name" {
+#  type        = string
+#  default     = ""
+#  description = "The name of the filter."
+#}
 
 variable "filter_cidr" {
   type        = string
@@ -129,17 +128,17 @@ variable "filter_policy" {
   description = "Block or Allow filter."
 }
 
-variable "policy_name" {
-  type        = string
-  default     = ""
-  description = "Name of the policy."
-}
+#variable "policy_name" {
+#  type        = string
+#  default     = ""
+#  description = "Name of the policy."
+#}
 
-variable "template_name" {
-  type        = string
-  default     = ""
-  description = "The name of the template. Cannot exceed 64 characters. You will refer to this name when you send email."
-}
+#variable "template_name" {
+#  type        = string
+#  default     = ""
+#  description = "The name of the template. Cannot exceed 64 characters. You will refer to this name when you send email."
+#}
 
 variable "template_subject" {
   type        = string
@@ -177,8 +176,8 @@ variable "cname_type" {
   description = "CNAME type for Record Set."
 }
 
-variable "ses_records" {
-  type        = list(string)
-  default     = []
-  description = "Additional entries which are added to the _amazonses record."
-}
+#variable "ses_records" {
+#  type        = list(string)
+#  default     = []
+#  description = "Additional entries which are added to the _amazonses record."
+#}
